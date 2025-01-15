@@ -1,0 +1,120 @@
+:root {
+  --font-family-base: "SODO Sans", system-ui, -apple-system, sans-serif;
+  --font-family-pike: "Pike", system-ui, -apple-system, sans-serif;
+  --font-family-lander: "Lander Tall", Georgia, serif;
+}
+
+/* Font optimization */
+@font-face {
+  font-family: 'SODO Sans';
+  font-display: swap;
+  src: local('SODO Sans');
+}
+
+@font-face {
+  font-family: 'Pike';
+  font-display: swap;
+  src: local('Pike');
+}
+
+@font-face {
+  font-family: 'Lander Tall';
+  font-display: swap;
+  src: local('Lander Tall');
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-family-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-pike);
+}
+
+blockquote {
+  font-family: var(--font-family-lander);
+}
+
+/* Lazy loading for images */
+img:not([loading]) {
+  loading: lazy;
+}
+
+/* ARIA improvements */
+.vp-nav-bar {
+  role: navigation;
+  aria-label: "Main navigation";
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.VPNavBar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.theme-toggle {
+  aria-label: "Toggle dark mode";
+}
+
+/* Hero styles */
+.VPHero {
+  min-height: 100vh;
+  position: relative;
+  padding-top: var(--vp-nav-height) !important;
+}
+
+/* Content padding to account for fixed navbar */
+.VPContent {
+  padding-top: var(--vp-nav-height) !important;
+}
+
+/* Theme toggle styles */
+.VPNavBarAppearance {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.VPSwitchAppearance {
+  border: 0;
+  padding: 0;
+  width: 22px;
+  height: 32px;
+  background: transparent;
+  color: var(--vp-c-text-2);
+  transition: color 0.5s;
+  cursor: pointer;
+}
+
+/* Social footer styles */
+.social-footer {
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid var(--vp-c-divider);
+  margin-top: 2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.social-link {
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.social-link:hover {
+  color: var(--vp-c-brand);
+}
