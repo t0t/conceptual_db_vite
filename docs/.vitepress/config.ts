@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   lang: 'en-US',
   title: '+0+1234',
-  description: 'Comprehensive web development documentation and guides',
+  description: 'Hacia un mapa conceptual de la inteligencia artificial',
 
   head: [
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],

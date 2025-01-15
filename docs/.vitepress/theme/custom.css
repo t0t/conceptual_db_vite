@@ -2,6 +2,7 @@
   --font-family-base: "SODO Sans", system-ui, -apple-system, sans-serif;
   --font-family-pike: "Pike", system-ui, -apple-system, sans-serif;
   --font-family-lander: "Lander Tall", Georgia, serif;
+  --color-1: #1b1b1f;
 }
 
 /* Font optimization */
@@ -66,14 +67,23 @@ img:not([loading]) {
 
 /* Hero styles */
 .VPHero {
-  min-height: 100vh;
+  display: flex;
+  text-align: center;
+  background-color: var(--color-1);
+  /* min-height: 100vh;
   position: relative;
-  padding-top: var(--vp-nav-height) !important;
+  padding-top: var(--vp-nav-height) !important; */
 }
 
 /* Content padding to account for fixed navbar */
 .VPContent {
-  padding-top: var(--vp-nav-height) !important;
+  /* padding-top: var(--vp-nav-height) !important; */
+}
+
+/* CTA Buttons */
+.actions[data-v-72cc4481] {
+  align-items: center;
+  display: ruby-text;
 }
 
 /* Theme toggle styles */
