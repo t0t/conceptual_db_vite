@@ -65,14 +65,23 @@ img:not([loading]) {
   aria-label: "Toggle dark mode";
 }
 
-/* Hero styles */
+/* Estilos del hero con animación */
 .VPHero {
-  display: flex;
-  text-align: center;
-  background-color: var(--color-1);
-  /* min-height: 100vh;
   position: relative;
-  padding-top: var(--vp-nav-height) !important; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Contenedor del hero con efecto de cristal */
+.VPHero .container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  /* padding: 2rem; */
+  /* backdrop-filter: blur(10px); */
 }
 
 /* Content padding to account for fixed navbar */
